@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: cloud-movie-dev
+  session:
+    store-type: redis
+    
+logging:
+  level:
+    root: INFO
+    com.skcc: TRACE    
