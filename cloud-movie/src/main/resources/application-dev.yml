@@ -1,6 +1,6 @@
 spring:
   application:
-    name: cloud-movie-dev
+    name: cloud-movie-biz1-dev
   session:
     store-type: redis
     

@@ -67,6 +67,5 @@ public class ContentController {
 		contentService.deleteContent(id);
 		return "redirect:/";
 	}
-	
-	
+
 }

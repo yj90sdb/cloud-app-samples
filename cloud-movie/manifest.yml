@@ -5,8 +5,9 @@ applications:
   random-route: false
   path: ./defaultServer
 #  path: ./target/cloud-movie-0.0.1-SNAPSHOT.war.original
-#  env:
-#    SPRING_PROFILES_ACTIVE: dev
-#  services:
+  env:
+    SPRING_PROFILES_ACTIVE: default
+  services:
+     - cloud-kks-syslog-svc
 #    - cloud-movie-db
 #    - cloud-movie-redis

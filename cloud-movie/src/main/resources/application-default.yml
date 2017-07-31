@@ -1,6 +1,6 @@
 spring:
   application:
-    name: cloud-movie-localhost
+    name: cloud-movie-biz1-local
   h2:
     console:
       enabled: true
@@ -11,8 +11,16 @@ spring:
     username: sa
     password: null
   session:
-    store-type: hash-map
-    
+    store-type: redis
+  redis:
+    host: 169.56.68.107
+    port: 7777
+    password: redis1234
+#    sentinel:
+#      master: mymaster
+#      nodes: 169.56.68.107:11000,169.56.67.203:11000,169.56.68.121:11000
+      
+
 server:
   port: 80
     
@@ -20,3 +28,4 @@ logging:
   level:
     root: INFO
     com.skcc: TRACE
+    org.springframework.data.redis: INFO

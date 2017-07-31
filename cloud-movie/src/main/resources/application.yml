@@ -1,0 +1,17 @@
+spring:
+  thymeleaf:
+    cache: false
+
+security:
+  basic:
+    enabled: false    
+
+server:
+  session:
+    timeout: 30
+    
+mybatis:
+  mapper-locations:
+  - mybatis/mapper/**/*.xml
+  type-handlers-package: com.skcc.authentication.dao.handler
+  type-aliases-package: com.skcc.authentication.vo, com.skcc.content.vo
