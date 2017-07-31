@@ -54,5 +54,7 @@ public class UserServiceTest {
 		user.setPassword("1234");
 		
 		userService.modifyUser(user);
+		
+		userService.removeUser(user.getUsername());
 	}
 }

@@ -63,6 +63,9 @@ public class UserMapperTest {
 		for (GrantedAuthority authority : user.getAuthorities()) {
 			userMapper.insertAuthority(user.getUsername(), authority.getAuthority());
 		}
+		
+		userMapper.deleteAuthorities(user.getUsername());
+		userMapper.deleteUser(user.getUsername());
 	}
 
 }
