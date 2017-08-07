@@ -6,8 +6,10 @@ applications:
   path: ./defaultServer
 #  path: ./target/cloud-movie-0.0.1-SNAPSHOT.war.original
   env:
-    SPRING_PROFILES_ACTIVE: default
+    SPRING_PROFILES_ACTIVE: dev
   services:
-     - cloud-kks-syslog-svc
+    - elk-syslog-service
+    - redis-good-service
+#     - cloud-kks-syslog-svc
 #    - cloud-movie-db
 #    - cloud-movie-redis

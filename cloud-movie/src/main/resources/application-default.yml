@@ -16,12 +16,12 @@ spring:
   session:
     store-type: redis
   redis:
-    host: 169.56.68.107
-    port: 7777
+#    host: 169.56.66.37
+#    port: 7777
     password: redis1234
-#    sentinel:
-#      master: mymaster
-#      nodes: 169.56.68.107:11000,169.56.67.203:11000,169.56.68.121:11000
+    sentinel:
+      master: mymaster
+      nodes: 169.56.68.114:16379,169.56.68.119:16379,169.56.66.35:16379
       
 
 server:
