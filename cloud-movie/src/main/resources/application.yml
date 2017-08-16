@@ -8,7 +8,7 @@ security:
 
 server:
   session:
-    timeout: 30
+    timeout: 600
     
 mybatis:
   mapper-locations:

@@ -14,7 +14,8 @@ spring:
     username: sa
     password: null
   session:
-    store-type: redis
+    store-type: hash-map
+#    store-type: redis
 #  redis:
 #    host: ${vcap.services.redis-cluster-service.credentials.host}
 #    port: ${vcap.services.redis-cluster-service.credentials.port}

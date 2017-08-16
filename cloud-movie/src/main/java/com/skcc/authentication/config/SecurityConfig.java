@@ -36,16 +36,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.authorizeRequests()
 				.antMatchers("/css/**").permitAll()
 				.antMatchers("/api/user/login").permitAll()
-				.antMatchers("/contents/**").hasAuthority(Authority.ADMIN.name())
-				.anyRequest().fullyAuthenticated()
-				.and()
-			.formLogin()
-				.loginPage("/login")
-				.failureUrl("/login?error").permitAll()
-				.and()
-			.logout()
-				.invalidateHttpSession(true)
-				.logoutUrl("/logout")
-				.logoutSuccessUrl("/");
+				.antMatchers("/api/user/**").hasAuthority(Authority.ADMIN.name())
+				.antMatchers("/api/contents/**").hasAuthority(Authority.ADMIN.name())
+//				.antMatchers("/contents/**").hasAuthority(Authority.ADMIN.name())
+				.anyRequest().fullyAuthenticated();
+//				.and()
+//			.formLogin()
+//				.loginPage("/login")
+//				.failureUrl("/login?error").permitAll()
+//				.and()
+//			.logout()
+//				.invalidateHttpSession(true)
+//				.logoutUrl("/logout")
+//				.logoutSuccessUrl("/");
 	}
 }

@@ -47,10 +47,10 @@ public class ApplicationConfiguration extends WebMvcConfigurerAdapter {
         registry.addInterceptor(localeChangeInterceptor());
     }
     
-	@Override
-	public void addViewControllers(ViewControllerRegistry registry) {
-		registry.addViewController("/login").setViewName("login");
-		registry.addViewController("/add").setViewName("add");
-	}
+//	@Override
+//	public void addViewControllers(ViewControllerRegistry registry) {
+//		registry.addViewController("/login").setViewName("login");
+//		registry.addViewController("/add").setViewName("add");
+//	}
 
 }

@@ -1,6 +1,13 @@
 package com.skcc.content.vo;
 
-public class Content {
+import java.io.Serializable;
+
+public class Content implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	public int id;
 	public String title;
 	public String director;

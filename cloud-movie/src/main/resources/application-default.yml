@@ -14,18 +14,18 @@ spring:
     username: sa
     password: null
   session:
-    store-type: redis
-  redis:
-#    host: 169.56.66.37
+    store-type: hash-map
+#  redis:
+#    host: 169.56.68.108
 #    port: 7777
-    password: redis1234
-    sentinel:
-      master: mymaster
-      nodes: 169.56.68.114:16379,169.56.68.119:16379,169.56.66.35:16379
+#    password: redis1234
+#    sentinel:
+#      master: mymaster
+#      nodes: 169.56.68.114:16379,169.56.68.119:16379,169.56.66.35:16379
       
 
 server:
-  port: 80
+  port: 8080
     
 logging:
   level:
